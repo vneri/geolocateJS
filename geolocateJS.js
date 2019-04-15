@@ -6,7 +6,7 @@ geolocateJS.locationObject = {};
 geolocateJS.locate = function(callback){
 	var request = new XMLHttpRequest();
 	request.onreadystatechange = function(event) {
-		if (request.status >= 200 && request.status < 300) {
+		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 			geolocateJS.locationObject = request.response;
 			if (callback)
 				callback(geolocateJS.locationObject);
