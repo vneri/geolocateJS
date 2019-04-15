@@ -11,7 +11,7 @@ Import the library into your project:
 Call it when you need it:
 ```JavaScript
   geolocateJS.locate(function(locationData){
-    alert('You are from ' + locationData.ip.country');
+    alert('You are from ' + locationData.ip.country);
   });
 ```
 
